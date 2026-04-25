@@ -1,9 +1,14 @@
-# harmonic-oscillator-pinn
-Code accompanying my blog post: [So, what is a physics-informed neural network?](https://benmoseley.blog/my-research/so-what-is-a-physics-informed-neural-network/)
+ # extension: inverse problem with PINNs for harmonic oscillator
+
+TLDR; extended this project to introduce an inverse problem of finding the parameters mu, k for a harmonic oscillator and solve it using a similar PINN architecture.
+
+The original copy of this repo accompanies the OPs blog post [So, what is a physics-informed neural network?](https://benmoseley.blog/my-research/so-what-is-a-physics-informed-neural-network/)
+
+Result from solving forward problem using pinns:
 
 <img src="figures/pinn.gif" width="850">
 
-Find write-up in jupyter notebook. I extended this project to introduce an inverse problem of finding the parameters mu, k and solve it using a similar PINN architecture.
+Find more extensive write-up in jupyter notebook <- details of why we use a PINN and problems I came up across when developing this demo.
 
 Here were 2 results from running different simulations for this inverse problem. The first one assumes a good estimate for our starting parameters (perhaps we know a rough estimate for our learnable parameters), and the second shows us starting at a default point e.g. 1.0. 
 
